@@ -1,0 +1,21 @@
+<p>show-student works!</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <th>{{student.id}}</th>
+            <th>{{ student.name }}</th>
+            <th>{{ student.dept}}</th>
+            <th>{{ student.age}}</th>
+            <th><button (click)="deleteStudent(student.id)">delete Student</button></th>
+        </tr>
+    </tbody>
+</table>
